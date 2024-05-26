@@ -172,15 +172,26 @@ font-size: 16px;
     font-weight: 600;
     padding: 10px 20px;
 }
-.copon img{
+/* .copon img{
     width: 20px;
     height: 20px;
     color: #029758 !important;
-}
+} */
+
+  .coupon-modal-code svg  {
+    width: 20px;
+    height: 20px;
+    margin-right: 10px ;
+  }
+  .coupon-modal-code svg path {
+    fill: #029758; 
+  }
+  
 .modal {
     background-image: linear-gradient(to bottom, #08fe9633, #08fe9633, #08fe9633, #08fe9633, #08fe9633) !important;
     backdrop-filter: blur(10px) !important;
 }
+
 
 @media screen and (max-width: 799px) {
     .item span{
@@ -207,6 +218,15 @@ font-size: 16px;
         width: 100%;
         gap: 20px;
     }
+    .child .custom-name span b{
+        font-size: 14px;
+        flex-shrink: 1;
+
+    }
+.child .element-discount-btn a{
+    font-size: 14px;
+
+}
     .item{
         margin-top: 40px;
         
