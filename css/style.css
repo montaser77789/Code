@@ -1,0 +1,232 @@
+*{
+    margin: 0  ;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+swiper-container {
+    width: 100%;
+    height: 100px !important;
+    margin: 15px 0 !important;
+    
+  }
+
+  swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px !important;
+    margin-top: 10px;
+  }
+  .swiper-pagination-fraction{
+    margin-top: 100px;
+  }
+
+
+
+.item{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 10px ;
+    border-radius: 20px;
+    cursor: pointer;
+}
+.item.active {
+    border: 1.5px solid #029758;
+    border-radius: 20px;
+    background-color: rgb(3, 231 ,134 ,15%);
+    color:#029758;
+}
+
+.parent{
+    display: flex;
+    justify-content: center;
+    align-items: around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.child{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .05);
+    width: 17%;
+    min-width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+
+
+}
+.child:hover{
+    border: 2px solid #029758;
+}
+.cont1-img{
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.cont2-img{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    margin-bottom: 0px;
+    box-shadow: 0px 5.58704px 33.52227px 0px rgba(0, 0, 0, 0.06);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #F3F3F3;
+}
+.cont2-img img{
+    width: 100% !important;
+    height: auto;
+    margin-top: 0px !important;
+}
+
+
+.coupon-store-name{
+line-height: 20px;
+color: #161616;
+font-weight: 400;
+font-size: 16px;
+}
+.coupon-store-number{
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #068AEE;
+}
+
+.element-discount-btn{
+    margin-top: 20px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.element-discount-btn a{
+    background-color: #029758;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+}
+.element-discount-btn a:hover{
+    background-color: #161616;
+}
+
+.coupon-modal{
+    width: 100%;
+    text-align: center;
+}
+
+#coupon-code-div{
+    width: 80%;
+    border-radius: 16px;
+    margin: 0px auto 24px;
+    height: 50px;
+}
+#coupon-code-div .coupon-modal-code{
+    border-radius: 0px 16px 16px 0px;
+    background: #F6F6FF;
+    border: 2px dashed  #029758;
+    border-left: none;
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.copy-shop{
+    border-radius: 16px 0px 0px 16px;
+    width: 55%;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background-color: #029758;
+    padding: 10px 20px;
+    border: 2px solid  #029758;
+    cursor: pointer;
+}
+
+.copon{
+    cursor: pointer;
+    color: #029758;
+    font-weight: 600;
+}
+.copon img{
+    width: 20px;
+    height: 20px;
+    color: #029758 !important;
+}
+.modal {
+    background-image: linear-gradient(to bottom, #08fe9633, #08fe9633, #08fe9633, #08fe9633, #08fe9633) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+@media screen and (max-width: 799px) {
+    .item span{
+        font-size: 15px;
+        text-wrap: nowrap;
+    }
+    swiper-container{
+        margin-top: 30px 0 !important;
+        height: 100px !important;
+    }
+    swiper-slide{
+        margin: 10px 10px !important;
+        width: auto !important;
+
+    }
+}
+
+@media screen and (max-width: 580px) {
+    .child{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 20px;
+    }
+    .item{
+        margin-top: 40px;
+        
+
+    }
+    .item span{
+        font-size: 15px;
+        text-wrap: nowrap;
+    }
+    swiper-container{
+        margin-top: 30px 0 !important;
+        height: 100px !important;
+
+    }
+    swiper-slide{
+        margin: 10px 0 !important;
+        width: auto !important;
+
+
+    }
+
+    
+}
+
+
