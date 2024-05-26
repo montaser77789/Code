@@ -7,8 +7,9 @@
 
 
 
-
-
+body {
+    font-family: 'Janna LT', Cairo, sans-serif;
+}
 
 
 .item {
@@ -149,6 +150,12 @@
     align-items: center;
     padding: 0px 5px !important;
 }
+.custom-discount-labtop{
+color: #161616;
+font-weight: 400;
+font-size: 16px;
+}
+
 
 #coupon-code-div .coupon-modal-code {
     border-radius: 0px 16px 16px 0px;
@@ -327,6 +334,9 @@
     .modal-dialog {
         width: 100% !important;
         margin: 0 !important; 
+    }
+    .custom-discount-labtop{
+        display: none !important;
     }
 
 
