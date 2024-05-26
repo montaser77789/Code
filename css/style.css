@@ -126,6 +126,9 @@
 .element-discount-btn a:hover {
     background-color: #161616;
 }
+.element-discount-btn a:focus {
+    background-color: #161616 !important;
+}
 
 .coupon-modal {
     width: 100%;
