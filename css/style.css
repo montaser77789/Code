@@ -120,6 +120,7 @@
     color: #fff;
     font-size: 16px;
     text-decoration: none;
+    border: none;
 }
 
 .element-discount-btn a:hover {
@@ -322,6 +323,7 @@
 
     .modal-dialog {
         width: 100% !important;
+        margin: 0 !important; 
     }
 
 
