@@ -260,6 +260,20 @@ font-size: 16px;
 .custom-discount {
     display: none !important;
 }
+.name-code-mobile{
+    display: none !important;
+}
+.name-code-mobile-labtop{
+    display: block !important;
+}
+.rival-code-labtop{
+    display: block !important;
+}
+.rival-code-mobile{
+    display: none !important;
+}
+
+
 
 
 @media screen and (max-width: 799px) {
@@ -323,10 +337,7 @@ font-size: 16px;
         text-wrap: nowrap;
 
     }
-    .child .element-discount-btn{
-        
-
-    }
+  
 
     .child .custom-name span img {
         padding: 0 10px;
@@ -355,6 +366,21 @@ font-size: 16px;
     }
     .custom-discount-labtop{
         display: none !important;
+    }
+    .coupon-store-name-deat{
+        display: none !important;
+    }
+    .name-code-mobile-labtop{
+        display: none !important;
+    }
+    .name-code-mobile{
+        display: block !important;
+    }
+    .rival-code-labtop{
+        display: none !important;
+    }
+    .rival-code-mobile{
+        display: block !important;
     }
 
 
