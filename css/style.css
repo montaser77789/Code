@@ -302,6 +302,7 @@ font-size: 16px;
         display: block !important;
         width: fit-content;
         padding-top: 20px;
+        min-width: 30%;
 
     }
 
@@ -309,8 +310,10 @@ font-size: 16px;
         font-size: 13px;
         text-wrap: nowrap;
         font-weight: 500;
+        text-wrap: wrap;
 
     }
+ 
 
 
 
@@ -318,6 +321,10 @@ font-size: 16px;
         font-size: 14px;
         flex-shrink: 1;
         text-wrap: nowrap;
+
+    }
+    .child .element-discount-btn{
+        
 
     }
 
