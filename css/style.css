@@ -309,14 +309,15 @@ font-size: 16px;
  
 
     .custom-name {
-        flex-shrink: 1;
+        min-width: 20%;
+        text-wrap: wrap;
     }
 
     .custom-discount {
         display: block !important;
         width: fit-content;
         padding-top: 20px;
-        min-width: 30%;
+        min-width: 20%;
 
     }
 
