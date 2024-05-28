@@ -340,7 +340,6 @@
 
           const parent = document.querySelector(".parent");
           let childes = data.map((item) => {
-            console.log(item.deat);
             return `
               <div class="child">
                 <div class="d-flex flex-column align-items-center mt-2">
@@ -380,18 +379,17 @@
         text.innerHTML = rival;
         const text2 = document.querySelector(".modal-body  #storetitle");
         text2.innerHTML = deat;
-        console.log(deat);
 
         const pathModal = document.querySelector(".modal-body  .path-modal");
         pathModal.setAttribute("href", path);
         const codeModal = document.querySelector(".modal-body  .coupon-cd");
         codeModal.innerHTML = discountcode; ;
-
-
-
-
         imgModal.setAttribute("src", img);
-      }
+  
+    
+ 
+          }
+       
     </script>
   </body>
 </html>

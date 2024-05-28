@@ -388,6 +388,9 @@ body {
         padding: 0 10px;
         border-left: 2px solid #eee;
     }
+    .element-discount-btn {
+        min-width: 25%;
+    }
 
     .child .element-discount-btn a {
         font-size: 14px;
