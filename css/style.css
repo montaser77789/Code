@@ -9,7 +9,7 @@
 
 body {
     font-family: 'Janna LT', Cairo, sans-serif;
-}
+ 
 
 .logo {
     margin-top: 10px;
@@ -318,7 +318,7 @@ body {
 }
 
 @media screen and (max-width: 580px) {
-    
+
     .logo {
         margin-top: 10px;
         margin: auto;
@@ -388,6 +388,7 @@ body {
         padding: 0 10px;
         border-left: 2px solid #eee;
     }
+
     .element-discount-btn {
         min-width: 25%;
     }
