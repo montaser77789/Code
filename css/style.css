@@ -10,9 +10,10 @@
 body {
     font-family: 'Janna LT', Cairo, sans-serif;
 }
+
 .logo {
     margin-top: 10px;
- margin: auto;
+    margin: auto;
     gap: 5px;
     border-radius: 20px;
     cursor: pointer;
@@ -21,7 +22,8 @@ body {
     border: 1.5px solid #029758;
     padding: 5px;
 
-}   
+}
+
 .logo img {
     width: 100%;
     height: 100%;
@@ -143,6 +145,7 @@ body {
 .element-discount-btn a:hover {
     background-color: #161616 !important;
 }
+
 .element-discount-btn a:focus {
     background-color: none;
 }
@@ -167,14 +170,16 @@ body {
     padding: 0px 5px !important;
 
 }
-.modal-body .coupon-modal-img{
+
+.modal-body .coupon-modal-img {
     width: 80px;
     height: 80px;
 }
-.custom-discount-labtop{
-color: #161616;
-font-weight: 400;
-font-size: 16px;
+
+.custom-discount-labtop {
+    color: #161616;
+    font-weight: 400;
+    font-size: 16px;
 }
 
 
@@ -210,10 +215,13 @@ font-size: 16px;
     text-decoration: none;
 
 }
-.path-modal{
-    padding: 0 5px; ;
+
+.path-modal {
+    padding: 0 5px;
+    ;
 }
-.copy-shop a{
+
+.copy-shop a {
     color: #fff;
     text-decoration: none;
 }
@@ -280,16 +288,20 @@ font-size: 16px;
 .custom-discount {
     display: none !important;
 }
-.name-code-mobile{
+
+.name-code-mobile {
     display: none !important;
 }
-.name-code-mobile-labtop{
+
+.name-code-mobile-labtop {
     display: block !important;
 }
-.rival-code-labtop{
+
+.rival-code-labtop {
     display: block !important;
 }
-.rival-code-mobile{
+
+.rival-code-mobile {
     display: none !important;
 }
 
@@ -306,6 +318,18 @@ font-size: 16px;
 }
 
 @media screen and (max-width: 580px) {
+    
+    .logo {
+        margin-top: 10px;
+        margin: auto;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 40%;
+        height: 100px;
+        border: 1.5px solid #029758;
+
+    }
+
     .child {
         display: flex;
         flex-direction: row;
@@ -326,7 +350,7 @@ font-size: 16px;
         border: 1px solid #F3F3F3;
         margin-top: 0;
     }
- 
+
 
     .custom-name {
         min-width: 20%;
@@ -348,7 +372,7 @@ font-size: 16px;
         text-wrap: wrap;
 
     }
- 
+
 
 
 
@@ -358,16 +382,16 @@ font-size: 16px;
         text-wrap: nowrap;
 
     }
-  
+
 
     .child .custom-name span img {
         padding: 0 10px;
         border-left: 2px solid #eee;
     }
- 
+
     .child .element-discount-btn a {
         font-size: 14px;
-        
+
 
     }
 
@@ -384,24 +408,30 @@ font-size: 16px;
 
     .modal-dialog {
         width: 100% !important;
-        margin: 0 !important; 
+        margin: 0 !important;
     }
-    .custom-discount-labtop{
+
+    .custom-discount-labtop {
         display: none !important;
     }
-    .coupon-store-name-deat{
+
+    .coupon-store-name-deat {
         display: none !important;
     }
-    .name-code-mobile-labtop{
+
+    .name-code-mobile-labtop {
         display: none !important;
     }
-    .name-code-mobile{
+
+    .name-code-mobile {
         display: block !important;
     }
-    .rival-code-labtop{
+
+    .rival-code-labtop {
         display: none !important;
     }
-    .rival-code-mobile{
+
+    .rival-code-mobile {
         display: block !important;
     }
 
