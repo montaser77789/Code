@@ -4,31 +4,28 @@
     box-sizing: border-box;
 }
 
-
-
-
 body {
     font-family: 'Janna LT', Cairo, sans-serif;
- 
-
+}
+.logo .menu{
+    display: none;
+}
 .logo {
+    
     margin-top: 10px;
-    margin: auto;
     gap: 5px;
     border-radius: 20px;
     cursor: pointer;
-    width: 40%;
-    height: 200px;
-    border: 1.5px solid #029758;
+    width: 30%;
+    height: 100px;
     padding: 5px;
-
 }
+
 
 .logo img {
     width: 100%;
     height: 100%;
 }
-
 
 .item {
     display: flex;
@@ -41,10 +38,10 @@ body {
 }
 
 .item.active {
-    border: 1.5px solid #029758;
+    border: 1.5px solid #AF43EB;
     border-radius: 20px;
     background-color: rgb(3, 231, 134, 15%);
-    color: #029758;
+    color: #AF43EB;
 }
 
 .parent {
@@ -72,10 +69,8 @@ body {
 }
 
 .child:hover {
-    border: 2px solid #029758;
+    border: 2px solid #AF43EB;
 }
-
-
 
 .cont1-img {
     width: 100%;
@@ -103,13 +98,10 @@ body {
     margin-top: 0px !important;
 }
 
-
 .coupon-store-name {
     line-height: 20px;
     color: #161616;
     text-align: center;
-
-
 }
 
 .coupon-store-name b {
@@ -132,7 +124,7 @@ body {
 }
 
 .element-discount-btn a {
-    background-color: #029758;
+    background-color: #AF43EB;
     border-radius: 10px;
     width: 100%;
     padding: 10px;
@@ -160,6 +152,14 @@ body {
     border-radius: 16px;
     margin: 0px auto 24px;
 }
+.copy-shop  span{
+    display: none;
+
+}
+.copy-shop a{
+    text-decoration: none;
+    color:white;
+}
 
 .modal-body {
     display: flex;
@@ -182,11 +182,10 @@ body {
     font-size: 16px;
 }
 
-
 #coupon-code-div .coupon-modal-code {
     border-radius: 0px 16px 16px 0px;
     background: #F6F6FF;
-    border: 2px dashed #029758;
+    border: 2px dashed #AF43EB;
     border-left: none;
     max-width: 50%;
     display: flex;
@@ -198,21 +197,17 @@ body {
 }
 
 .copy-shop {
-    border-radius: 16px 0px 0px 16px;
-    max-width: 50%;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    background-color: #029758;
-    padding: 10px 20px;
-    border: 2px solid #029758;
-    cursor: pointer;
-    text-wrap: nowrap;
-    gap: 3px;
+   display: flex;
+   gap: 5px;
+   padding: 10px 0;
+
+}
+.copy-shop button{
+    background-color: #AF43EB;
+    padding: 10px 8px;
+    border-radius: 7px;
+    border: none;
     color: white;
-    text-decoration: none;
 
 }
 
@@ -221,31 +216,17 @@ body {
     ;
 }
 
-.copy-shop a {
-    color: #fff;
-    text-decoration: none;
-}
 
 .copon {
     cursor: pointer;
-    color: #029758;
+    color: #AF43EB;
     font-weight: 600;
     padding: 10px 20px;
 }
 
-.coupon-modal-code svg {
-    width: 20px;
-    height: 20px;
-    margin-right: 10px;
-}
 
-.coupon-modal-img {
-    width: 50%;
-}
 
-.coupon-modal-code svg path {
-    fill: #029758;
-}
+
 
 #promotext {
     font-weight: 600;
@@ -256,7 +237,6 @@ body {
     color: #000;
     text-align: center;
 }
-
 #offredetails #storetitle {
     text-align: center;
     font-weight: 600;
@@ -267,22 +247,16 @@ body {
     color: #000;
     padding: 5px 0;
 }
-
 .modal {
-    background-image: linear-gradient(to bottom, #08fe9633, #08fe9633, #08fe9633, #08fe9633, #08fe9633) !important;
+    background-image: linear-gradient(to bottom, #AF43EB33, #AF43EB33, #AF43EB33, #AF43EB33, #AF43EB33) !important;
     backdrop-filter: blur(10px) !important;
-
 }
-
 .modal-dialog {
     min-width: 40% !important;
     position: absolute !important;
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
-
-
-
 }
 
 .custom-discount {
@@ -305,29 +279,53 @@ body {
     display: none !important;
 }
 
-
-
-
 @media screen and (max-width: 799px) {
     .item span {
         font-size: 15px;
         text-wrap: nowrap;
     }
-
-
 }
-
+.popover {
+    background-color: #AF43EB !important; 
+    color: white;
+    border-radius: 5px;
+    max-width: 200px;
+  }
+  .popover-header {
+    background-color: #AF43EB !important; 
+    color: white !important;
+    border-bottom: none !important;
+  }
+  .popover-body {
+    color: white !important;
+  }
+ 
 @media screen and (max-width: 580px) {
 
+    .logo .menu {
+        display: block;
+
+    }
+    .logo .menu  svg{
+        font-size: 25px !important;
+    }
     .logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 10px ;
+        gap: 5px;
         margin-top: 10px;
-        margin: auto;
         border-radius: 20px;
         cursor: pointer;
         width: 40%;
-        height: 100px;
-        border: 1.5px solid #029758;
+        height: 50px;
 
+    }
+    .logo img{
+        padding: 10px;
+        width: 130px;
+        height: 100px;
     }
 
     .child {
@@ -351,7 +349,6 @@ body {
         margin-top: 0;
     }
 
-
     .custom-name {
         min-width: 20%;
         text-wrap: wrap;
@@ -362,7 +359,6 @@ body {
         width: fit-content;
         padding-top: 20px;
         min-width: 20%;
-
     }
 
     .custom-discount span b {
@@ -370,19 +366,15 @@ body {
         text-wrap: nowrap;
         font-weight: 500;
         text-wrap: wrap;
-
     }
-
-
-
-
+    .custom-discount {
+        text-align: end;
+    }
     .child .custom-name span b {
         font-size: 14px;
         flex-shrink: 1;
         text-wrap: nowrap;
-
     }
-
 
     .child .custom-name span img {
         padding: 0 10px;
@@ -395,14 +387,10 @@ body {
 
     .child .element-discount-btn a {
         font-size: 14px;
-
-
     }
 
     .item {
         margin-top: 40px;
-
-
     }
 
     .item span {
@@ -438,12 +426,4 @@ body {
     .rival-code-mobile {
         display: block !important;
     }
-
-
-
-
-
-
-
-
 }

@@ -7,9 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
-    <!-- <link rel="stylesheet" href="css/bootstrap.min.css" />
-  <link rel="stylesheet" href="css/bootstrap.rtl.min.css" />
-  <link rel="stylesheet" href="css/all.min.css" /> -->
 
     <link
       rel="stylesheet"
@@ -17,18 +14,21 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-
-    <!-- <link rel="stylesheet" href="https://github.com/montaser77789/Code/blob/main/css/style.css" />
-  <link rel="stylesheet" href="https://drive.google.com/uc?export=download&id=10IeEeCGLd4LJDEf-L3iPthrJpb4Q3c_R" />
-  <link rel="stylesheet" href="https://drive.google.com/uc?export=download&id=1Y7QFHl3snyGWa6dTeLUnpn690SNM8GLw" />
-  <link rel="stylesheet" href="https://drive.google.com/uc?export=download&id=1ZQMrS72B3597w6CwmYNM47AqopvQ3oRO" /> -->
   </head>
   <body>
+   <div class="container">
+    
+   
+
     <div class="logo">
-      <img src="./images/اللوجو.svg" />
+      <div class="menu">
+        <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/> </svg>
+      </div>
+      <img src="https://raw.githubusercontent.com/montaser77789/Code/acc3eee3734d2e70a861eed299f05592b01999c1/images/%D8%A7%D9%84%D9%84%D9%88%D8%AC%D9%88.svg" />
     </div>
+   </div>
     <section>
-      <div class="container mt-5">
+      <div class="container ">
         <div class="parent"></div>
         <div
           class="modal fade"
@@ -65,10 +65,11 @@
                     <hr class="m-auto mb-1" style="width: 60%" />
                   </div>
 
-                  <div
+                  <!-- <div
                     id="coupon-code-div"
                     class="d-flex justify-content-center align-items-center mb-3 mt-3"
                   >
+
                     <div class="copy-shop" id="st-link" onclick="copyCode()">
                       <a class="path-modal" target="_blank">
                         <img
@@ -76,25 +77,24 @@
                           style="margin-right: 5px; margin-left: 5px"
                         />
 
-                        <span >إنسخ وتسوق </span>
+                        <span>تسوق </span>
                       </a>
                     </div>
                     <div class="coupon-modal-code copon">
-                      <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="15"
-                        height="12"
-                        viewBox="0 0 15 12"
-                        fill="none"
-                      >
-                        <path
-                          d="M12.9667 5.76667C12.9665 5.24385 13.1553 4.73859 13.4984 4.34408C13.8414 3.94956 14.3156 3.69239 14.8334 3.62C14.8334 2.41333 14.72 1.72 14.26 1.25333C13.6667 0.666666 12.72 0.666666 10.8334 0.666666H4.16669C2.28669 0.666666 1.34002 0.666666 0.753354 1.25333C0.286687 1.72 0.166687 2.41333 0.166687 3.62C0.675367 3.70381 1.13769 3.96573 1.47108 4.35896C1.80447 4.75219 1.98722 5.25113 1.98669 5.76667C1.98746 6.28299 1.80495 6.78282 1.47165 7.17716C1.13836 7.5715 0.675919 7.83474 0.166687 7.92C0.166687 9.42 0.233354 10.2333 0.753354 10.7467C1.27335 11.26 2.28669 11.3333 4.16669 11.3333H10.8334C12.72 11.3333 13.6667 11.3333 14.2534 10.7467C14.84 10.16 14.8267 9.41333 14.8267 7.92C14.3096 7.84466 13.8369 7.58551 13.4953 7.19004C13.1537 6.79456 12.966 6.28925 12.9667 5.76667V5.76667ZM3.94669 4.24667C3.94669 4.01856 4.01433 3.79557 4.14106 3.60591C4.26779 3.41624 4.44791 3.26842 4.65866 3.18112C4.8694 3.09383 5.1013 3.07099 5.32502 3.11549C5.54875 3.16 5.75425 3.26984 5.91555 3.43114C6.07685 3.59243 6.18669 3.79794 6.23119 4.02166C6.27569 4.24539 6.25285 4.47728 6.16556 4.68803C6.07827 4.89877 5.93044 5.0789 5.74078 5.20563C5.55111 5.33236 5.32813 5.4 5.10002 5.4C4.94832 5.40088 4.79794 5.37166 4.65761 5.31401C4.51729 5.25636 4.38979 5.17144 4.28252 5.06417C4.17524 4.95689 4.09032 4.8294 4.03268 4.68907C3.97503 4.54874 3.9458 4.39837 3.94669 4.24667V4.24667ZM5.49335 8.91333C5.31344 8.91691 5.13653 8.86688 4.98514 8.76959C4.83376 8.67231 4.71475 8.53218 4.64326 8.36704C4.57177 8.2019 4.55104 8.01922 4.5837 7.84226C4.61637 7.6653 4.70095 7.50207 4.82669 7.37333L8.82669 3.37333C8.91161 3.28535 9.01303 3.21495 9.12516 3.16616C9.23728 3.11737 9.35792 3.09114 9.48019 3.08898C9.60245 3.08681 9.72394 3.10874 9.83773 3.15353C9.95152 3.19832 10.0554 3.26508 10.1434 3.35C10.2313 3.43492 10.3017 3.53634 10.3505 3.64847C10.3993 3.7606 10.4255 3.88124 10.4277 4.0035C10.4299 4.12576 10.4079 4.24726 10.3632 4.36104C10.3184 4.47483 10.2516 4.57868 10.1667 4.66667L6.16669 8.66667C6.07781 8.75002 5.97281 8.81431 5.85817 8.85559C5.74352 8.89686 5.62164 8.91424 5.50002 8.90667L5.49335 8.91333ZM9.91335 8.91333C9.68497 8.91465 9.46133 8.84813 9.27079 8.72221C9.08025 8.59628 8.93139 8.41662 8.84307 8.206C8.75475 7.99538 8.73096 7.76327 8.77471 7.53911C8.81845 7.31495 8.92777 7.10882 9.0888 6.94686C9.24982 6.78489 9.45531 6.67438 9.67922 6.62934C9.90312 6.58429 10.1354 6.60674 10.3465 6.69384C10.5576 6.78093 10.7381 6.92875 10.8652 7.11855C10.9922 7.30836 11.06 7.53161 11.06 7.76C11.0583 8.06357 10.9369 8.35422 10.7222 8.56888C10.5076 8.78355 10.2169 8.90492 9.91335 8.90667V8.91333Z"
-                          fill="#068AEE"
-                        />
-                      </svg>
+                     تسوق
                       <span class="coupon-cd" id="code"></span>
                     </div>
+                  </div> -->
+                  <div  class="copy-shop" id="st-link">
+                    <button ><a target="_blank" class="path" >تسوق الان</a></button>
+                    <button  onclick="copyCode()"type="button" 
+                     data-bs-container="body" 
+                     data-bs-toggle="popover" 
+                     data-bs-placement="top" data-bs-content="تم نسخ الكود">انسخ الكود</button>
+                  
+                    <span class="coupon-cd" id="code"></span>
                   </div>
+
                 </div>
               </div>
             </div>
@@ -152,7 +152,7 @@
         },
         {
           id: 5,
-          img: "./images/السيف.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D8%A7%D9%84%D8%B3%D9%8A%D9%81.png?raw=true",
           name: "السيف",
           rival: "3% - حد اقصى 25 ريال",
           discountcode: "AM16",
@@ -188,7 +188,7 @@
         },
         {
           id: 9,
-          img: "./images/اناس.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D8%A7%D9%86%D8%A7%D8%B3.png?raw=true",
           name: "أناس",
           rival: "10%",
           discountcode: "AM37",
@@ -224,7 +224,7 @@
         },
         {
           id: 13,
-          img: "./images/الشمس والرمال.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D8%A7%D9%84%D8%B4%D9%85%D8%B3%20%D9%88%D8%A7%D9%84%D8%B1%D9%85%D8%A7%D9%84.png?raw=true",
           name: "الشمس والرمال",
           rival: "30% - حد أقصى 50 ريال",
           discountcode: "KSK51",
@@ -323,7 +323,7 @@
         },
         {
           id: 24,
-          img: "./images/ارجان باكيج.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D8%A7%D8%B1%D8%AC%D8%A7%D9%86%20%D8%A8%D8%A7%D9%83%D9%8A%D8%AC.png?raw=true",
           name: "أرجان باكيج",
           rival: "35%",
           discountcode: "AHT",
@@ -345,7 +345,7 @@
                   <span class="coupon-store-name name-code-mobile-labtop"><b>${item.name}</b></span>
                   <span class="coupon-store-name rival-code-mobile" dir="rtl" ><b>${item.rival}</b></span>
                 </div>
-                <div class="d-flex flex-column align-items-center mt-2 custom-name">
+                <div class="d-flex flex-column align-items-end mt-2 custom-name">
                   <span class="coupon-store-name name-code-mobile"><b>${item.name}</b></span>
                   <span class="coupon-store-number mt-2 mb-2"><img /><img src="./css/icon.svg" alt="SVG Icon" /></span>
                   <span class="coupon-store-name rival-code-labtop " dir="rtl"><b>${item.rival}</b></span>
@@ -363,29 +363,46 @@
       });
       parent.innerHTML = childes.join("");
 
+      document.addEventListener("DOMContentLoaded", function () {
+        var popoverTriggerList = [].slice.call(
+          document.querySelectorAll('[data-bs-toggle="popover"]')
+        );
+        var popoverList = popoverTriggerList.map(function (popoverTriggerEl) {
+          return new bootstrap.Popover(popoverTriggerEl);
+        });
+      });
+
       function CopyAndShop(name, img, rival, discountcode, deat, path) {
         const imgModal = document.querySelector(".modal-body img");
-        const title = document.querySelector(".modal-body  #st-name");
-
+        const title = document.querySelector(".modal-body #st-name");
         imgModal.setAttribute("src", img);
         title.innerHTML = name;
-        const text = document.querySelector(".modal-body  #promotext");
+        const text = document.querySelector(".modal-body #promotext");
         text.innerHTML = rival;
-        const text2 = document.querySelector(".modal-body  #storetitle");
+        const text2 = document.querySelector(".modal-body #storetitle");
         text2.innerHTML = deat;
-
-        const pathModal = document.querySelector(".modal-body  .path-modal");
+        const pathModal = document.querySelector(
+          ".modal-body .copy-shop button .path"
+        );
         pathModal.setAttribute("href", path);
-        const codeModal = document.querySelector(".modal-body  .coupon-cd");
+        const codeModal = document.querySelector(
+          ".modal-body .copy-shop .coupon-cd"
+        );
         codeModal.innerHTML = discountcode;
-        imgModal.setAttribute("src", img);
       }
+
       function copyCode() {
         const couponCode = document.getElementById("code").textContent;
-        console.log("copy");
         navigator.clipboard
           .writeText(couponCode)
-          .then(() => {})
+          .then(() => {
+            const button = document.querySelector('[onclick="copyCode()"]');
+            const popover = bootstrap.Popover.getInstance(button);
+            button.setAttribute("data-bs-content", "تم نسخ الكود");
+            popover.setContent({ ".popover-body": "تم نسخ الكود" });
+            popover.show();
+            setTimeout(() => popover.hide(), 2000);
+          })
           .catch((err) => {
             console.error("فشل في نسخ الكود: ", err);
           });
