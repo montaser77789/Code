@@ -7,11 +7,13 @@
 body {
     font-family: 'Janna LT', Cairo, sans-serif;
 }
-.logo .menu{
+
+.logo .menu {
     display: none;
 }
+
 .logo {
-    
+
     margin-top: 10px;
     gap: 5px;
     border-radius: 20px;
@@ -152,13 +154,15 @@ body {
     border-radius: 16px;
     margin: 0px auto 24px;
 }
-.copy-shop  span{
+
+.copy-shop span {
     display: none;
 
 }
-.copy-shop a{
+
+.copy-shop a {
     text-decoration: none;
-    color:white;
+    color: white;
 }
 
 .modal-body {
@@ -197,12 +201,13 @@ body {
 }
 
 .copy-shop {
-   display: flex;
-   gap: 35px;
-   padding: 10px 0;
+    display: flex;
+    gap: 35px;
+    padding: 10px 0;
 
 }
-.copy-shop button{
+
+.copy-shop button {
     background-color: #AF43EB;
     padding: 10px 8px;
     border-radius: 7px;
@@ -242,6 +247,7 @@ body {
     background-image: linear-gradient(to bottom, #AF43EB33, #AF43EB33, #AF43EB33, #AF43EB33, #AF43EB33) !important;
     backdrop-filter: blur(10px) !important;
 }
+
 .modal-dialog {
     min-width: 40% !important;
     position: absolute !important;
@@ -276,31 +282,35 @@ body {
         text-wrap: nowrap;
     }
 }
+
 .popover {
-    background-color: #AF43EB !important; 
+    background-color: #AF43EB !important;
     color: white;
     border-radius: 5px;
     max-width: 200px;
-  }
-  .popover-header {
-    background-color: #AF43EB !important; 
+}
+
+.popover-header {
+    background-color: #AF43EB !important;
     color: white !important;
     border-bottom: none !important;
-  }
-  .popover-body {
+}
+
+.popover-body {
     color: white !important;
-  }
- 
+}
+
 @media screen and (max-width: 580px) {
 
     .logo .menu {
         display: block;
     }
+
     .logo {
         display: flex;
         align-items: center;
         justify-content: space-between;
-        padding: 0 20px ;
+        padding: 0 20px;
         gap: 5px;
         margin-top: 10px;
         border-radius: 20px;
@@ -311,7 +321,8 @@ body {
         width: 100%;
 
     }
-    .logo img{
+
+    .logo img {
         padding: 10px 0;
         width: 130px;
         height: 100px;
@@ -339,7 +350,7 @@ body {
     }
 
     .custom-name {
-        min-width: 19%;
+        min-width: 18%;
         text-wrap: wrap;
         align-items: end;
     }
@@ -348,7 +359,7 @@ body {
         display: block !important;
         width: fit-content;
         padding-top: 20px;
-        min-width: 19%;
+        min-width: 18%;
         text-align: center;
     }
 
@@ -358,12 +369,15 @@ body {
         font-weight: 500;
         text-wrap: wrap;
     }
+
     .custom-discount {
         text-align: end;
     }
-    .custom-nam{
-        align-items: center ;
+
+    .custom-nam {
+        align-items: center;
     }
+
     .child .custom-name span b {
         font-size: 14px;
         flex-shrink: 1;
@@ -377,11 +391,11 @@ body {
 
     .element-discount-btn {
         min-width: 30%;
-        
+
     }
 
     .child .element-discount-btn a {
-        
+
         font-size: 14px;
     }
 

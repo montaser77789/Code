@@ -6,29 +6,504 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="css/style.css" />
-
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
+    <style>
+      * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Janna LT', Cairo, sans-serif;
+}
+
+.logo .menu {
+    display: none;
+}
+
+.logo {
+
+    margin-top: 10px;
+    gap: 5px;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 30%;
+    height: 100px;
+    padding: 5px;
+}
+
+
+.logo img {
+    width: 100%;
+    height: 100%;
+}
+
+.item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    padding: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.item.active {
+    border: 1.5px solid #AF43EB;
+    border-radius: 20px;
+    background-color: rgb(3, 231, 134, 15%);
+    color: #AF43EB;
+}
+
+.parent {
+    display: flex;
+    justify-content: center;
+    align-items: around;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.child {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .05);
+    width: 17%;
+    min-width: 200px;
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid #fff;
+
+
+}
+
+.child:hover {
+    border: 2px solid #AF43EB;
+}
+
+.cont1-img {
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.cont2-img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+    align-items: center;
+    margin-bottom: 0px;
+    box-shadow: 0px 5.58704px 33.52227px 0px rgba(0, 0, 0, 0.06);
+    padding: 5px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border: 1px solid #F3F3F3;
+}
+
+.cont2-img img {
+    width: 100% !important;
+    height: auto;
+    margin-top: 0px !important;
+}
+
+.coupon-store-name {
+    line-height: 20px;
+    color: #161616;
+    text-align: center;
+}
+
+.coupon-store-name b {
+    font-weight: bolder;
+    font-size: 17px;
+}
+
+.coupon-store-number {
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+    color: #068AEE;
+}
+
+.element-discount-btn {
+    margin-top: 20px !important;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.element-discount-btn a {
+    background-color: #AF43EB;
+    border-radius: 10px;
+    width: 100%;
+    padding: 10px;
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    border: none;
+}
+
+.element-discount-btn a:hover {
+    background-color: #161616 !important;
+}
+
+.element-discount-btn a:focus {
+    background-color: none;
+}
+
+.coupon-modal {
+    width: 100%;
+    text-align: center;
+}
+
+#coupon-code-div {
+    max-width: 80%;
+    border-radius: 16px;
+    margin: 0px auto 24px;
+}
+
+.copy-shop span {
+    display: none;
+
+}
+
+.copy-shop a {
+    text-decoration: none;
+    color: white;
+}
+
+.modal-body {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 5px !important;
+
+}
+
+.modal-body .coupon-modal-img {
+    width: 80px;
+    height: 80px;
+}
+
+.custom-discount-labtop {
+    color: #161616;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+#coupon-code-div .coupon-modal-code {
+    border-radius: 0px 16px 16px 0px;
+    background: #F6F6FF;
+    border: 2px dashed #AF43EB;
+    border-left: none;
+    max-width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+    padding: 11px 20px;
+    gap: 3px;
+}
+
+.copy-shop {
+    display: flex;
+    gap: 35px;
+    padding: 10px 0;
+
+}
+
+.copy-shop button {
+    background-color: #AF43EB;
+    padding: 10px 8px;
+    border-radius: 7px;
+    border: none;
+    color: white;
+
+}
+
+.path-modal {
+    padding: 0 5px;
+    ;
+}
+
+
+.copon {
+    cursor: pointer;
+    color: #AF43EB;
+    font-weight: 600;
+    padding: 10px 20px;
+}
+
+
+
+
+
+.coupon-modaloffer-title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 30px;
+    max-width: 460px;
+    margin: auto;
+    color: #000;
+    text-align: center;
+}
+
+.modal {
+    background-image: linear-gradient(to bottom, #AF43EB33, #AF43EB33, #AF43EB33, #AF43EB33, #AF43EB33) !important;
+    backdrop-filter: blur(10px) !important;
+}
+
+.modal-dialog {
+    min-width: 40% !important;
+    position: absolute !important;
+    top: 50% !important;
+    left: 50% !important;
+    transform: translate(-50%, -50%) !important;
+}
+
+.custom-discount {
+    display: none !important;
+}
+
+.name-code-mobile {
+    display: none !important;
+}
+
+.name-code-mobile-labtop {
+    display: block !important;
+}
+
+.rival-code-labtop {
+    display: block !important;
+}
+
+.rival-code-mobile {
+    display: none !important;
+}
+.panar{
+  width: 100%;
+  margin: 10px 0px;
+}
+.panar .img-panar{
+  width: 100%;
+  height: 200px;
+}
+
+
+@media screen and (max-width: 799px) {
+    .item span {
+        font-size: 15px;
+        text-wrap: nowrap;
+    }
+}
+
+.popover {
+    background-color: #AF43EB !important;
+    color: white;
+    border-radius: 5px;
+    max-width: 200px;
+}
+
+.popover-header {
+    background-color: #AF43EB !important;
+    color: white !important;
+    border-bottom: none !important;
+}
+
+.popover-body {
+    color: white !important;
+}
+
+
+@media screen and (max-width: 580px) {
+  .panar{
+  width: 100%;
+}
+.panar .img-panar{
+  width: 100% !important;
+  margin: auto;
+  height: 75px;
+}
+
+    .logo .menu {
+        display: block;
+    }
+
+    .logo {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+        gap: 5px;
+        margin-top: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+        width: 40%;
+        height: 50px;
+        margin: 0 10px;
+        width: 100%;
+
+    }
+
+    .logo img {
+        padding: 10px 0;
+        width: 130px;
+        height: 100px;
+    }
+
+    .child {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        padding: 10px 5px;
+    }
+
+    .cont2-img {
+        width: 80px;
+        height: 80px;
+        align-items: center;
+        margin-bottom: 0px;
+        box-shadow: 0px 5.58704px 33.52227px 0px rgba(0, 0, 0, 0.06);
+        padding: 5px;
+        border-radius: 10px;
+        border: 1px solid #F3F3F3;
+        margin-top: 0;
+    }
+
+    .custom-name {
+        min-width: 18%;
+        text-wrap: wrap;
+        align-items: end;
+    }
+
+    .custom-discount {
+        display: block !important;
+        width: fit-content;
+        padding-top: 20px;
+        min-width: 18%;
+        text-align: center;
+    }
+
+    .custom-discount span b {
+        font-size: 13px;
+        text-wrap: nowrap;
+        font-weight: 500;
+        text-wrap: wrap;
+    }
+
+    .custom-discount {
+        text-align: end;
+    }
+
+    .custom-nam {
+        align-items: center;
+    }
+
+    .child .custom-name span b {
+        font-size: 14px;
+        flex-shrink: 1;
+        text-wrap: nowrap;
+    }
+
+    .child .custom-name span img {
+        padding: 0 10px;
+        border-left: 2px solid #eee;
+    }
+
+    .element-discount-btn {
+        min-width: 30%;
+
+    }
+
+    .child .element-discount-btn a {
+
+        font-size: 14px;
+    }
+
+    .item {
+        margin-top: 40px;
+    }
+
+    .item span {
+        font-size: 15px;
+        text-wrap: nowrap;
+    }
+
+    .modal-dialog {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+
+    .custom-discount-labtop {
+        display: none !important;
+    }
+
+    .coupon-store-name-deat {
+        display: none !important;
+    }
+
+    .name-code-mobile-labtop {
+        display: none !important;
+    }
+
+    .name-code-mobile {
+        display: block !important;
+    }
+
+    .rival-code-labtop {
+        display: none !important;
+    }
+
+    .rival-code-mobile {
+        display: block !important;
+    }
+}
+    </style>
   </head>
   <body>
-   <div class="container">
-    
-   
-
-    <div class="logo">
-      <div class="menu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16"> <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/> </svg>
+    <div class="container">
+      <div class="logo">
+        <div class="menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="30"
+            height="30"
+            fill="currentColor"
+            class="bi bi-list"
+            viewBox="0 0 16 16"
+          >
+            <path
+              fill-rule="evenodd"
+              d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"
+            />
+          </svg>
+        </div>
+        <img
+          src="https://raw.githubusercontent.com/montaser77789/Code/acc3eee3734d2e70a861eed299f05592b01999c1/images/%D8%A7%D9%84%D9%84%D9%88%D8%AC%D9%88.svg"
+        />
       </div>
-      <img src="https://raw.githubusercontent.com/montaser77789/Code/acc3eee3734d2e70a861eed299f05592b01999c1/images/%D8%A7%D9%84%D9%84%D9%88%D8%AC%D9%88.svg" />
     </div>
-   </div>
+    <div class="container">
+      <div class="panar">
+        <img class="img-panar" src="./images/1.svg"/> 
+
+      </div>
+
+    </div>
     <section>
-      <div class="container ">
+      <div class="container">
         <div class="parent"></div>
         <div
           class="modal fade"
@@ -51,50 +526,38 @@
                 <div class="modal-body coupon-modal">
                   <img class="lazy coupon-modal-img mt-3" />
                   <span class="mb-4" id="st-name"></span>
-                  <div id="offretitle" >
+                  <div id="offretitle">
                     <span class="coupon-modaloffer-title">العرض</span>
-                    <p class="pt-1 pb-1 deat"  id="promotext"></p>
+                    <p class="pt-1 pb-1 deat" id="promotext"></p>
                     <hr
                       class="m-auto mb-1"
                       style="width: 60%; background: #ececec"
                     />
                   </div>
                   <div id="offredetails" class="mb-3">
-                    <span   class="coupon-modaloffer-title mt-0">تفاصيل</span>
+                    <span class="coupon-modaloffer-title mt-0">تفاصيل</span>
                     <p id="storetitle" class="deat"></p>
                     <hr class="m-auto mb-1" style="width: 60%" />
                   </div>
 
-                  <!-- <div
-                    id="coupon-code-div"
-                    class="d-flex justify-content-center align-items-center mb-3 mt-3"
-                  >
+               
+                  <div class="copy-shop" id="st-link">
+                    <button>
+                      <a target="_blank" class="path">تسوق الان</a>
+                    </button>
+                    <button
+                      onclick="copyCode()"
+                      type="button"
+                      data-bs-container="body"
+                      data-bs-toggle="popover"
+                      data-bs-placement="top"
+                      data-bs-content="تم نسخ الكود"
+                    >
+                      انسخ الكود
+                    </button>
 
-                    <div class="copy-shop" id="st-link" onclick="copyCode()">
-                      <a class="path-modal" target="_blank">
-                        <img
-                          src="https://yajny.com/images/link-external-01.svg"
-                          style="margin-right: 5px; margin-left: 5px"
-                        />
-
-                        <span>تسوق </span>
-                      </a>
-                    </div>
-                    <div class="coupon-modal-code copon">
-                     تسوق
-                      <span class="coupon-cd" id="code"></span>
-                    </div>
-                  </div> -->
-                  <div  class="copy-shop" id="st-link">
-                    <button ><a target="_blank" class="path" >تسوق الان</a></button>
-                    <button  onclick="copyCode()"type="button" 
-                     data-bs-container="body" 
-                     data-bs-toggle="popover" 
-                     data-bs-placement="top" data-bs-content="تم نسخ الكود">انسخ الكود</button>
-                  
                     <span class="coupon-cd" id="code"></span>
                   </div>
-
                 </div>
               </div>
             </div>
@@ -116,7 +579,7 @@
       const data = [
         {
           id: 1,
-          img: "./images/نون.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D9%86%D9%88%D9%86.png?raw=true",
           name: "نون ",
           rival: "10% - حد اقصى 10 ريال",
           discountcode: "UHQZ",
@@ -125,7 +588,7 @@
         },
         {
           id: 2,
-          img: "./images/نمشي.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D9%86%D9%85%D8%B4%D9%8A.png?raw=true",
           name: "نمشي",
           rival: "10% - 20%",
           discountcode: "AA133",
@@ -134,7 +597,7 @@
         },
         {
           id: 3,
-          img: "./images/ستايلي.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D8%B3%D8%AA%D8%A7%D9%8A%D9%84%D9%8A.png?raw=true",
           name: "ستايلي ",
           rival: "10%",
           discountcode: "ZPB",
@@ -143,7 +606,7 @@
         },
         {
           id: 4,
-          img: "./images/فلاي إن.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D9%81%D9%84%D8%A7%D9%8A%20%D8%A5%D9%86.png?raw=true",
           name: "فلاي إن ",
           rival: "خصم 50 ريال ",
           discountcode: "AM2311",
@@ -161,7 +624,7 @@
         },
         {
           id: 6,
-          img: "./images/سي فالي.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D8%B3%D9%8A%20%D9%81%D8%A7%D9%84%D9%8A.png?raw=true",
           name: "سي فالي",
           rival: "10%",
           discountcode: "MOH",
@@ -170,7 +633,7 @@
         },
         {
           id: 7,
-          img: "./images/درعه.jpeg",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D8%AF%D8%B1%D8%B9%D9%87.jpeg?raw=true",
           name: "درعه",
           rival: "5% + 2% للدفع أون لاين",
           discountcode: "AMN68",
@@ -179,7 +642,7 @@
         },
         {
           id: 8,
-          img: "./images/فوغاست.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D9%81%D9%88%D8%BA%D8%A7%D8%B3%D8%AA.png?raw=true",
           name: "فوغا كلوسيت",
           rival: "37% -52%",
           discountcode: "AKL2",
@@ -197,7 +660,7 @@
         },
         {
           id: 10,
-          img: "./images/ملف اكواد الخصم.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D9%85%D9%84%D9%81%20%D8%A7%D9%83%D9%88%D8%A7%D8%AF%20%D8%A7%D9%84%D8%AE%D8%B5%D9%85.png?raw=true",
           name: "بست كلين",
           rival: "5% + شحن مجاني",
           discountcode: "ADR",
@@ -206,7 +669,7 @@
         },
         {
           id: 11,
-          img: "./images/ايوا.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D8%A7%D9%8A%D9%88%D8%A7.png?raw=true",
           name: "إيوا",
           rival: "25%",
           discountcode: "AAEF",
@@ -215,7 +678,7 @@
         },
         {
           id: 12,
-          img: "./images/ممزورلد.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D9%85%D9%85%D8%B2%D9%88%D8%B1%D9%84%D8%AF.png?raw=true",
           name: "ممزورلد",
           rival: "10%",
           discountcode: "ZZZ85",
@@ -233,7 +696,7 @@
         },
         {
           id: 14,
-          img: "./images/اندر ارمر.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D8%A7%D9%86%D8%AF%D8%B1%20%D8%A7%D8%B1%D9%85%D8%B1.png?raw=true",
           name: "أندر أرمر",
           rival: "20%",
           discountcode: "ND149",
@@ -242,7 +705,7 @@
         },
         {
           id: 15,
-          img: "./images/دروب كيك.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D8%AF%D8%B1%D9%88%D8%A8%20%D9%83%D9%8A%D9%83.png?raw=true",
           name: "دروب كيك",
           rival: "25%",
           discountcode: "DL101",
@@ -251,7 +714,7 @@
         },
         {
           id: 16,
-          img: "./images/سكوات وولف.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D8%B3%D9%83%D9%88%D8%A7%D8%AA%20%D9%88%D9%88%D9%84%D9%81.png?raw=true",
           name: "سكوات وولف",
           rival: "15%",
           discountcode: "WUF",
@@ -260,7 +723,7 @@
         },
         {
           id: 17,
-          img: "./images/ليفيل.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D9%84%D9%8A%D9%81%D9%8A%D9%84.png?raw=true",
           name: "ليفيل شوز",
           rival: "10%",
           discountcode: "AS122",
@@ -269,7 +732,7 @@
         },
         {
           id: 18,
-          img: "./images/برفيوم كو.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D8%A8%D8%B1%D9%81%D9%8A%D9%88%D9%85%20%D9%83%D9%88.png?raw=true",
           name: "برفيوم كو",
           rival: "10%",
           discountcode: "P114",
@@ -278,7 +741,7 @@
         },
         {
           id: 19,
-          img: "./images/تاسومة.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D8%AA%D8%A7%D8%B3%D9%88%D9%85%D8%A9.png?raw=true",
           name: "تاسومة",
           rival: "5%",
           discountcode: "AT190",
@@ -287,7 +750,7 @@
         },
         {
           id: 20,
-          img: "./images/سيارتك.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D8%B3%D9%8A%D8%A7%D8%B1%D8%AA%D9%83.png?raw=true",
           name: "سيارتك",
           rival: "5% - 10%",
           discountcode: "MCA170",
@@ -296,7 +759,7 @@
         },
         {
           id: 21,
-          img: "./images/موارد.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D9%85%D9%88%D8%A7%D8%B1%D8%AF.png?raw=true",
           name: "مياه موارد",
           rival: "15%",
           discountcode: "AM125",
@@ -305,7 +768,7 @@
         },
         {
           id: 22,
-          img: "./images/زد.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D8%B2%D8%AF.png?raw=true",
           name: "زد",
           rival: "10%",
           discountcode: "AZ53",
@@ -314,7 +777,7 @@
         },
         {
           id: 23,
-          img: "./images/لبيه.png",
+          img: "https://github.com/montaser77789/Code/blob/main/images/%D9%84%D8%A8%D9%8A%D9%87.png?raw=true",
           name: "لبيه",
           rival: "10%",
           discountcode: "am21",
@@ -347,7 +810,7 @@
                 </div>
                 <div class="d-flex flex-column  mt-2 custom-name">
                   <span class="coupon-store-name name-code-mobile"><b>${item.name}</b></span>
-                  <span class="coupon-store-number mt-2 mb-2"><img /><img src="./css/icon.svg" alt="SVG Icon" /></span>
+                  <span class="coupon-store-number mt-2 mb-2"><img /><img src="https://yajny.com/images/Vector.svg" alt="SVG Icon" /></span>
                   <span class="coupon-store-name rival-code-labtop " dir="rtl"><b>${item.rival}</b></span>
 
                 </div>
