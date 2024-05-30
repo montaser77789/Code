@@ -14,478 +14,466 @@
     />
     <style>
       * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Janna LT', Cairo, sans-serif;
-}
-
-.logo .menu {
-    display: none;
-}
-
-.logo {
-
-    margin-top: 10px;
-    gap: 5px;
-    border-radius: 20px;
-    cursor: pointer;
-    width: 30%;
-    height: 100px;
-    padding: 5px;
-}
-
-
-.logo img {
-    width: 100%;
-    height: 100%;
-}
-
-.item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 5px;
-    padding: 10px;
-    border-radius: 20px;
-    cursor: pointer;
-}
-
-.item.active {
-    border: 1.5px solid #AF43EB;
-    border-radius: 20px;
-    background-color: rgb(3, 231, 134, 15%);
-    color: #AF43EB;
-}
-
-.parent {
-    display: flex;
-    justify-content: center;
-    align-items: around;
-    flex-wrap: wrap;
-    gap: 10px;
-}
-
-.child {
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    text-align: center;
-    background-color: #fff;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, .05);
-    width: 17%;
-    min-width: 200px;
-    border-radius: 20px;
-    padding: 10px;
-    border: 2px solid #fff;
-
-
-}
-
-.child:hover {
-    border: 2px solid #AF43EB;
-}
-
-.cont1-img {
-    width: 100%;
-    height: 200px;
-    border-radius: 20px;
-    overflow: hidden;
-}
-
-.cont2-img {
-    display: flex;
-    width: 100px;
-    height: 100px;
-    align-items: center;
-    margin-bottom: 0px;
-    box-shadow: 0px 5.58704px 33.52227px 0px rgba(0, 0, 0, 0.06);
-    padding: 5px;
-    margin-top: 10px;
-    border-radius: 10px;
-    border: 1px solid #F3F3F3;
-}
-
-.cont2-img img {
-    width: 100% !important;
-    height: auto;
-    margin-top: 0px !important;
-}
-
-.coupon-store-name {
-    line-height: 20px;
-    color: #161616;
-    text-align: center;
-}
-
-.coupon-store-name b {
-    font-weight: bolder;
-    font-size: 17px;
-}
-
-.coupon-store-number {
-
-    font-weight: 700;
-    font-size: 16px;
-    line-height: 20px;
-    color: #068AEE;
-}
-
-.element-discount-btn {
-    margin-top: 20px !important;
-    margin-left: 5px;
-    margin-right: 5px;
-}
-
-.element-discount-btn a {
-    background-color: #AF43EB;
-    border-radius: 10px;
-    width: 100%;
-    padding: 10px;
-    color: #fff;
-    font-size: 16px;
-    text-decoration: none;
-    border: none;
-}
-
-.element-discount-btn a:hover {
-    background-color: #161616 !important;
-}
-
-.element-discount-btn a:focus {
-    background-color: none;
-}
-
-.coupon-modal {
-    width: 100%;
-    text-align: center;
-}
-
-#coupon-code-div {
-    max-width: 80%;
-    border-radius: 16px;
-    margin: 0px auto 24px;
-}
-
-.copy-shop span {
-    display: none;
-
-}
-
-.copy-shop a {
-    text-decoration: none;
-    color: white;
-}
-
-.modal-body {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 5px !important;
-
-}
-
-.modal-body .coupon-modal-img {
-    width: 80px;
-    height: 80px;
-}
-
-.custom-discount-labtop {
-    color: #161616;
-    font-weight: 400;
-    font-size: 16px;
-}
-
-#coupon-code-div .coupon-modal-code {
-    border-radius: 0px 16px 16px 0px;
-    background: #F6F6FF;
-    border: 2px dashed #AF43EB;
-    border-left: none;
-    max-width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    align-items: center;
-    padding: 11px 20px;
-    gap: 3px;
-}
-
-.copy-shop {
-    display: flex;
-    gap: 35px;
-    padding: 10px 0;
-
-}
-
-.copy-shop button {
-    background-color: #AF43EB;
-    padding: 10px 8px;
-    border-radius: 7px;
-    border: none;
-    color: white;
-
-}
-
-.path-modal {
-    padding: 0 5px;
-    ;
-}
-
-
-.copon {
-    cursor: pointer;
-    color: #AF43EB;
-    font-weight: 600;
-    padding: 10px 20px;
-}
-
-
-
-
-
-.coupon-modaloffer-title {
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 30px;
-    max-width: 460px;
-    margin: auto;
-    color: #000;
-    text-align: center;
-}
-
-.modal {
-    background-image: linear-gradient(to bottom, #AF43EB33, #AF43EB33, #AF43EB33, #AF43EB33, #AF43EB33) !important;
-    backdrop-filter: blur(10px) !important;
-}
-
-.modal-dialog {
-    min-width: 40% !important;
-    position: absolute !important;
-    top: 50% !important;
-    left: 50% !important;
-    transform: translate(-50%, -50%) !important;
-}
-
-.custom-discount {
-    display: none !important;
-}
-
-.name-code-mobile {
-    display: none !important;
-}
-
-.name-code-mobile-labtop {
-    display: block !important;
-}
-
-.rival-code-labtop {
-    display: block !important;
-}
-
-.rival-code-mobile {
-    display: none !important;
-}
-.panar{
-  width: 100%;
-  margin: 15px 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 150px;
-  border-radius: 5px;
-  border: 2px solid white;
-
-
-}
-.panar .img-panar{
-  width: 50% !important;
-  box-shadow: 0px 5.58704px 44.52227px 0px rgba(0, 0, 0, 0.06);
-  border-radius: 20px;
-
-  height: 100%;
-
-}
-.panar .img-panar:hover{
-  border: 2px solid #AF43EB;
-}
-
-
-@media screen and (max-width: 799px) {
-    .item span {
-        font-size: 15px;
-        text-wrap: nowrap;
-    }
-}
-
-.popover {
-    background-color: #AF43EB !important;
-    color: white;
-    border-radius: 5px;
-    max-width: 200px;
-}
-
-.popover-header {
-    background-color: #AF43EB !important;
-    color: white !important;
-    border-bottom: none !important;
-}
-
-.popover-body {
-    color: white !important;
-}
-
-
-@media screen and (max-width: 580px) {
-  .panar{
-  width: 100%;
-  height: 130px;
-}
-.panar .img-panar{
-  width: 100% !important;
-  margin: auto;
-  height: 100%;
-}
-
-    .logo .menu {
-        display: block;
-    }
-
-    .logo {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 0 20px;
-        gap: 5px;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Janna LT", Cairo, sans-serif;
+      }
+
+      .logo .menu {
+        display: none;
+      }
+
+      .logo {
         margin-top: 10px;
+        gap: 5px;
         border-radius: 20px;
         cursor: pointer;
-        width: 40%;
-        height: 50px;
-        margin: 0 10px;
-        width: 100%;
-
-    }
-
-    .logo img {
-        padding: 10px 0;
-        width: 130px;
+        width: 30%;
         height: 100px;
-    }
+        padding: 5px;
+      }
 
-    .child {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: space-between;
+      .logo img {
         width: 100%;
-        padding: 10px 5px;
-    }
+        height: 100%;
+      }
 
-    .cont2-img {
-        width: 80px;
-        height: 80px;
+      .item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        padding: 10px;
+        border-radius: 20px;
+        cursor: pointer;
+      }
+
+      .item.active {
+        border: 1.5px solid #af43eb;
+        border-radius: 20px;
+        background-color: rgb(3, 231, 134, 15%);
+        color: #af43eb;
+      }
+
+      .parent {
+        display: flex;
+        justify-content: center;
+        align-items: around;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .child {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        background-color: #fff;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+        width: 17%;
+        min-width: 200px;
+        border-radius: 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+      }
+
+      .child:hover {
+        border: 2px solid #af43eb;
+      }
+
+      .cont1-img {
+        width: 100%;
+        height: 200px;
+        border-radius: 20px;
+        overflow: hidden;
+      }
+
+      .cont2-img {
+        display: flex;
+        width: 100px;
+        height: 100px;
         align-items: center;
         margin-bottom: 0px;
         box-shadow: 0px 5.58704px 33.52227px 0px rgba(0, 0, 0, 0.06);
         padding: 5px;
+        margin-top: 10px;
         border-radius: 10px;
-        border: 1px solid #F3F3F3;
-        margin-top: 0;
-    }
+        border: 1px solid #f3f3f3;
+      }
 
-    .custom-name {
-        min-width: 18%;
-        text-wrap: wrap;
-        align-items: end;
-    }
-
-    .custom-discount {
-        display: block !important;
-        width: fit-content;
-        padding-top: 20px;
-        min-width: 18%;
-        text-align: center;
-    }
-
-    .custom-discount span b {
-        font-size: 13px;
-        text-wrap: nowrap;
-        font-weight: 500;
-        text-wrap: wrap;
-    }
-
-    .custom-discount {
-        text-align: end;
-    }
-
-    .custom-nam {
-        align-items: center;
-    }
-
-    .child .custom-name span b {
-        font-size: 14px;
-        flex-shrink: 1;
-        text-wrap: nowrap;
-    }
-
-    .child .custom-name span img {
-        padding: 0 10px;
-        border-left: 2px solid #eee;
-    }
-
-    .element-discount-btn {
-        min-width: 30%;
-
-    }
-
-    .child .element-discount-btn a {
-
-        font-size: 14px;
-    }
-
-    .item {
-        margin-top: 40px;
-    }
-
-    .item span {
-        font-size: 15px;
-        text-wrap: nowrap;
-    }
-
-    .modal-dialog {
+      .cont2-img img {
         width: 100% !important;
-        margin: 0 !important;
-    }
+        height: auto;
+        margin-top: 0px !important;
+      }
 
-    .custom-discount-labtop {
+      .coupon-store-name {
+        line-height: 20px;
+        color: #161616;
+        text-align: center;
+      }
+
+      .coupon-store-name b {
+        font-weight: bolder;
+        font-size: 17px;
+      }
+
+      .coupon-store-number {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #068aee;
+      }
+
+      .element-discount-btn {
+        margin-top: 20px !important;
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+
+      .element-discount-btn a {
+        background-color: #af43eb;
+        border-radius: 10px;
+        width: 100%;
+        padding: 10px;
+        color: #fff;
+        font-size: 16px;
+        text-decoration: none;
+        border: none;
+      }
+
+      .element-discount-btn a:hover {
+        background-color: #161616 !important;
+      }
+
+      .element-discount-btn a:focus {
+        background-color: none;
+      }
+
+      .coupon-modal {
+        width: 100%;
+        text-align: center;
+      }
+
+      #coupon-code-div {
+        max-width: 80%;
+        border-radius: 16px;
+        margin: 0px auto 24px;
+      }
+
+      .copy-shop span {
+        display: none;
+      }
+
+      .copy-shop a {
+        text-decoration: none;
+        color: white;
+      }
+
+      .modal-body {
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+        justify-content: center;
+        align-items: center;
+        padding: 0px 5px !important;
+      }
+
+      .modal-body .coupon-modal-img {
+        width: 80px;
+        height: 80px;
+      }
+
+      .custom-discount-labtop {
+        color: #161616;
+        font-weight: 400;
+        font-size: 16px;
+      }
+
+      #coupon-code-div .coupon-modal-code {
+        border-radius: 0px 16px 16px 0px;
+        background: #f6f6ff;
+        border: 2px dashed #af43eb;
+        border-left: none;
+        max-width: 50%;
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        align-items: center;
+        padding: 11px 20px;
+        gap: 3px;
+      }
+
+      .copy-shop {
+        display: flex;
+        gap: 35px;
+        padding: 10px 0;
+      }
+
+      .copy-shop button {
+        background-color: #af43eb;
+        padding: 10px 8px;
+        border-radius: 7px;
+        border: none;
+        color: white;
+      }
+
+      .path-modal {
+        padding: 0 5px;
+      }
+
+      .copon {
+        cursor: pointer;
+        color: #af43eb;
+        font-weight: 600;
+        padding: 10px 20px;
+      }
+
+      .coupon-modaloffer-title {
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 30px;
+        max-width: 460px;
+        margin: auto;
+        color: #000;
+        text-align: center;
+      }
+
+      .modal {
+        background-image: linear-gradient(
+          to bottom,
+          #af43eb33,
+          #af43eb33,
+          #af43eb33,
+          #af43eb33,
+          #af43eb33
+        ) !important;
+        backdrop-filter: blur(10px) !important;
+      }
+
+      .modal-dialog {
+        min-width: 40% !important;
+        position: absolute !important;
+        top: 50% !important;
+        left: 50% !important;
+        transform: translate(-50%, -50%) !important;
+      }
+
+      .custom-discount {
         display: none !important;
-    }
+      }
 
-    .coupon-store-name-deat {
+      .name-code-mobile {
         display: none !important;
-    }
+      }
 
-    .name-code-mobile-labtop {
-        display: none !important;
-    }
-
-    .name-code-mobile {
+      .name-code-mobile-labtop {
         display: block !important;
-    }
+      }
 
-    .rival-code-labtop {
-        display: none !important;
-    }
-
-    .rival-code-mobile {
+      .rival-code-labtop {
         display: block !important;
-    }
-}
+      }
+
+      .rival-code-mobile {
+        display: none !important;
+      }
+      .panar {
+        width: 100%;
+        margin: 15px 0px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        border-radius: 5px;
+        border: 2px solid white;
+        height: 200px;
+
+      }
+      .panar .img-panar {
+        box-shadow: 0px 5.58704px 44.52227px 0px rgba(0, 0, 0, 0.06);
+        border-radius: 20px;
+        height: 100%;
+        width: 50%;
+        
+      }
+      .panar .img-panar:hover {
+        border: 2px solid #af43eb;
+      }
+
+      /* @media screen and (max-width: 799px) {
+        .item span {
+          font-size: 15px;
+          text-wrap: nowrap;
+        }
+      } */
+
+      .popover {
+        background-color: #af43eb !important;
+        color: white;
+        border-radius: 5px;
+        max-width: 200px;
+      }
+
+      .popover-header {
+        background-color: #af43eb !important;
+        color: white !important;
+        border-bottom: none !important;
+      }
+
+      .popover-body {
+        color: white !important;
+      }
+
+      @media screen and (max-width: 580px) {
+        .panar {
+          width: 100%;
+          height: 180px;
+
+        }
+        .panar .img-panar {
+          margin: auto;
+          width: 100%;
+
+          height: 100%;
+        }
+
+        .logo .menu {
+          display: block;
+        }
+
+        .logo {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 0 20px;
+          gap: 5px;
+          margin-top: 10px;
+          border-radius: 20px;
+          cursor: pointer;
+          width: 40%;
+          height: 50px;
+          margin: 0 10px;
+          width: 100%;
+        }
+
+        .logo img {
+          padding: 10px 0;
+          width: 130px;
+          height: 100px;
+        }
+
+        .child {
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: space-between;
+          width: 100%;
+          padding: 10px 5px;
+        }
+
+        .cont2-img {
+          width: 80px;
+          height: 80px;
+          align-items: center;
+          margin-bottom: 0px;
+          box-shadow: 0px 5.58704px 33.52227px 0px rgba(0, 0, 0, 0.06);
+          padding: 5px;
+          border-radius: 10px;
+          border: 1px solid #f3f3f3;
+          margin-top: 0;
+        }
+
+        .custom-name {
+          min-width: 18%;
+          text-wrap: wrap;
+          align-items: end;
+        }
+
+        .custom-discount {
+          display: block !important;
+          width: fit-content;
+          padding-top: 20px;
+          min-width: 18%;
+          text-align: center;
+        }
+
+        .custom-discount span b {
+          font-size: 13px;
+          text-wrap: nowrap;
+          font-weight: 500;
+          text-wrap: wrap;
+        }
+
+        .custom-discount {
+          text-align: end;
+        }
+
+        .custom-nam {
+          align-items: center;
+        }
+
+        .child .custom-name span b {
+          font-size: 14px;
+          flex-shrink: 1;
+          text-wrap: nowrap;
+        }
+
+        .child .custom-name span img {
+          padding: 0 10px;
+          border-left: 2px solid #eee;
+        }
+
+        .element-discount-btn {
+          min-width: 30%;
+        }
+
+        .child .element-discount-btn a {
+          font-size: 14px;
+        }
+
+        .item {
+          margin-top: 40px;
+        }
+
+        .item span {
+          font-size: 15px;
+          text-wrap: nowrap;
+        }
+
+        .modal-dialog {
+          width: 100% !important;
+          margin: 0 !important;
+        }
+
+        .custom-discount-labtop {
+          display: none !important;
+        }
+
+        .coupon-store-name-deat {
+          display: none !important;
+        }
+
+        .name-code-mobile-labtop {
+          display: none !important;
+        }
+
+        .name-code-mobile {
+          display: block !important;
+        }
+
+        .rival-code-labtop {
+          display: none !important;
+        }
+
+        .rival-code-mobile {
+          display: block !important;
+        }
+      }
     </style>
   </head>
   <body>
@@ -513,10 +501,8 @@ body {
     </div>
     <div class="container">
       <div class="panar">
-        <img class="img-panar" src="./images/pizza (1).svg"/> 
-
+        <img class="img-panar" src="./images/pizza (1).svg" />
       </div>
-
     </div>
     <section>
       <div class="container">
@@ -556,7 +542,6 @@ body {
                     <hr class="m-auto mb-1" style="width: 60%" />
                   </div>
 
-               
                   <div class="copy-shop" id="st-link">
                     <button>
                       <a target="_blank" class="path">تسوق الان</a>
